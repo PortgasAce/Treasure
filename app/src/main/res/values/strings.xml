@@ -1,5 +1,12 @@
 <resources>
-  <string name="app_name">PortgasTreasure</string>
+  <string name="app_name">Treasure</string>
 
   <string name="title_item">Item</string>
+  <string name="title_download">下载</string>
+  <string name="title_glide">Glide</string>
+
+  <!--group download-->
+  <string name="title_download_encryption">加密</string>
+  <string name="title_download_single">单任务</string>
+  <string name="title_download_dynamic">动态url</string>
 </resources>

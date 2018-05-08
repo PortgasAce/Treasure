@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="8dp"
+  android:orientation="vertical"
+  tools:context="com.portgas.treasure.download.EncryptionActivity">
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="单任务测试，下载，暂停"
+    tools:ignore="HardcodedText"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+      android:id="@+id/download_btn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="下载"
+      tools:ignore="HardcodedText"/>
+
+    <Button
+      android:id="@+id/pause_btn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="暂停"
+      tools:ignore="HardcodedText"/>
+
+    <Button
+      android:id="@+id/delete_btn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="删除"
+      tools:ignore="HardcodedText"/>
+  </LinearLayout>
+
+  <ProgressBar
+    android:id="@+id/progressBar"
+    style="?android:attr/progressBarStyleHorizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

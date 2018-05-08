@@ -1,10 +1,14 @@
 package com.portgas.treasure.main;
 
 import android.os.Bundle;
+import android.support.annotation.DrawableRes;
+import android.support.annotation.StringRes;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.RecyclerView.LayoutManager;
+import com.portgas.treasure.GlideActivity;
+import com.portgas.treasure.download.DownloadMainActivity;
 import com.portgas.treasure.portgastreasure.R;
 import java.util.ArrayList;
 import java.util.List;
@@ -24,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
 
     initView();
     initData();
+
+    mAdapter.setData(mData);
   }
 
   private void initView() {
@@ -34,14 +40,16 @@ public class MainActivity extends AppCompatActivity {
     mRecyclerView.setLayoutManager(mLayoutManager);
   }
 
-  private void initData() {
-    mData.add(new MainModel(R.string.title_item, R.drawable.ic_launcher, MainActivity.class));
-    mData.add(new MainModel(R.string.title_item, R.drawable.ic_launcher, MainActivity.class));
-    mData.add(new MainModel(R.string.title_item, R.drawable.ic_launcher, MainActivity.class));
-    mData.add(new MainModel(R.string.title_item, R.drawable.ic_launcher, MainActivity.class));
-    mData.add(new MainModel(R.string.title_item, R.drawable.ic_launcher, MainActivity.class));
+  protected void initData() {
+    addData(R.string.title_download, R.drawable.ic_launcher, DownloadMainActivity.class);
+    addData(R.string.title_glide, R.drawable.ic_launcher, GlideActivity.class);
+    addData(R.string.title_item, R.drawable.ic_launcher, MainActivity.class);
+    addData(R.string.title_item, R.drawable.ic_launcher, MainActivity.class);
+    addData(R.string.title_item, R.drawable.ic_launcher, MainActivity.class);
+  }
 
-    mAdapter.setData(mData);
+  public void addData(@StringRes int title, @DrawableRes int icon, Class activity) {
+    mData.add(new MainModel(title, icon, activity));
   }
 
 }
