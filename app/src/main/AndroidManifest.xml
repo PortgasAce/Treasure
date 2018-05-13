@@ -44,6 +44,7 @@
     <!-- file download end -->
 
     <activity android:name="com.portgas.treasure.GlideActivity"/>
+    <activity android:name="com.portgas.treasure.gif.GifActivity"/>
 
   </application>
 

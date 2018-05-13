@@ -4,6 +4,7 @@
   <string name="title_item">Item</string>
   <string name="title_download">下载</string>
   <string name="title_glide">Glide</string>
+  <string name="title_gif">Gif</string>
 
   <!--group download-->
   <string name="title_download_encryption">加密</string>
