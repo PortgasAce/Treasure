@@ -5,6 +5,7 @@
   <string name="title_download">下载</string>
   <string name="title_glide">Glide</string>
   <string name="title_gif">Gif</string>
+  <string name="title_coordinator">Coordinator</string>
 
   <!--group download-->
   <string name="title_download_encryption">加密</string>

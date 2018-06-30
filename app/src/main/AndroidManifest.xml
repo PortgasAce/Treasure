@@ -45,6 +45,7 @@
 
     <activity android:name="com.portgas.treasure.GlideActivity"/>
     <activity android:name="com.portgas.treasure.gif.GifActivity"/>
+    <activity android:name="com.portgas.treasure.coordinate.CoordinatorLayoutActivity"/>
 
   </application>
 

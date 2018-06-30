@@ -8,6 +8,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.RecyclerView.LayoutManager;
 import com.portgas.treasure.GlideActivity;
+import com.portgas.treasure.coordinate.CoordinatorLayoutActivity;
 import com.portgas.treasure.download.DownloadMainActivity;
 import com.portgas.treasure.gif.GifActivity;
 import com.portgas.treasure.portgastreasure.R;
@@ -45,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
     addData(R.string.title_download, R.drawable.ic_launcher, DownloadMainActivity.class);
     addData(R.string.title_glide, R.drawable.ic_launcher, GlideActivity.class);
     addData(R.string.title_gif, R.drawable.ic_launcher, GifActivity.class);
-    addData(R.string.title_item, R.drawable.ic_launcher, MainActivity.class);
+    addData(R.string.title_coordinator, R.drawable.ic_launcher, CoordinatorLayoutActivity.class);
     addData(R.string.title_item, R.drawable.ic_launcher, MainActivity.class);
   }
 
